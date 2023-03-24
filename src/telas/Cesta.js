@@ -4,6 +4,7 @@ import {StyleSheet,Image , Dimensions, Text, View} from 'react-native';
 import green from '../../assets/green.jpg';
 import logo from '../../assets/logo.png'
 
+import Texto from '../components/Texto'
 const width=Dimensions.get('screen').width;
 
 
@@ -18,9 +19,9 @@ export default function Cesta(){
             <Image style={estilos.imagemFazenda} source={logo}/>
     <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
         </View>
-    <Text style={estilos.descricao}>Uma cesta de produtos selecionados
+    <Texto style={estilos.descricao}>Uma cesta de produtos selecionados
         cuidadosamente da fazenda para sua cozinha
-    </Text>
+    </Texto>
     <Text style={estilos.preco}>R$ 40,00</Text>
     </View>
     </>
